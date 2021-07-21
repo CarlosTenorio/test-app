@@ -7,7 +7,7 @@ import { Book } from '../../models';
   styleUrls: ['./book-preview-list.component.scss'],
 })
 export class BookPreviewListComponent {
-  @Input() books: Book[] = [];
+  @Input() books: Book[] | null = [];
 
   constructor() {}
 }

@@ -1,1 +1,4 @@
-<app-book-preview-list [books]="books"></app-book-preview-list>
+<!-- First Option -->
+<!-- <app-book-preview-list [books]="bookService.getBooks()"></app-book-preview-list> -->
+<!-- Second Option -->
+<app-book-preview-list [books]="bookService.books$ | async"></app-book-preview-list>
