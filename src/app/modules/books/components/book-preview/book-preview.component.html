@@ -1,5 +1,14 @@
-<div class="book-detail">
+<!-- First Option (Using Material) -->
+<mat-card class="card-detail">
+  <mat-card-title>{{ book?.volumeInfo?.title }}</mat-card-title>
+  <img src="{{ book?.volumeInfo?.imageLinks?.thumbnail }}" alt="" />
+  <mat-card-subtitle>{{ book?.volumeInfo?.subtitle }}</mat-card-subtitle>
+  <mat-card-content>{{ book?.volumeInfo?.description }}</mat-card-content>
+</mat-card>
+
+<!-- Second Option (Our styles) -->
+<!-- <div class="book-detail">
   <div class="title">{{ book?.volumeInfo?.title }}</div>
   <div>{{ book?.volumeInfo?.subtitle }}</div>
   <div>{{ book?.volumeInfo?.description }}</div>
-</div>
+</div> -->
